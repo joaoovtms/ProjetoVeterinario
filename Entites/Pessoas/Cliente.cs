@@ -13,5 +13,21 @@ namespace Veterinario
         {
 
         }
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine(":::::::::::::::::::::::::::::::::::::::::::::::::::::::");
+            sb.Append("Nome: ");
+            sb.AppendLine(Nome);
+            sb.Append("Idade: ");
+            sb.AppendLine(Idade.ToString());
+            sb.Append("Data de Nascimento: ");
+            sb.AppendLine(DataNascimento.ToString("dd/MM/yyyy"));
+            sb.Append("CPF: ");
+            sb.AppendLine(CPF);
+            sb.AppendLine(":::::::::::::::::::::::::::::::::::::::::::::::::::::::");
+            return sb.ToString();
+        }
     }
 }
